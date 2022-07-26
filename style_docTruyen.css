@@ -826,7 +826,7 @@ figure {
     padding-top: 2px;
     padding-right: -10px;
     padding-bottom: 12px;
-    margin-right: 42px;
+    margin-right: 5%;
     margin-left: 65px;
     border: 1px solid #fff;
 }
@@ -883,6 +883,62 @@ textarea.modal-form-comment.form-comment {
     width: 0%;
     height: 5px;
     background: #007aff;
+}
+
+/*Select Chapter */
+
+.chapters-selectbox-holder {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.c-selectpicker {
+    max-width: 450px;
+}
+
+select.selectpicker {
+    padding: 10px 30px 10px 16px;
+    border: none;
+    background-color: #ebebeb;
+    transition: all ease-in-out .2s;
+    border-radius: 5px;
+}
+
+.selectpicker {
+    appearance: none;
+}
+
+label {
+    margin-bottom: 0;
+    position: relative;
+}
+
+select {
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    color: #333;
+    outline: none;
+    font-weight: 400;
+    word-wrap: normal;
+}
+
+option {
+    background-color: #fff;
+    color: #333;
+}
+
+.c-selectpicker label .chap-list {
+    top: 30%;
+    left: 65%;
+    color: #888;
+    font-style: normal;
+    font-weight: 900;
+    position: absolute;
 }
 
 /* DOC TRUYEN 1 RESPONSIVE*/
@@ -992,6 +1048,11 @@ textarea.modal-form-comment.form-comment {
     .modal-container {
         width: 65%;
     }
+
+    .modal-comment-content.comment-content {
+        margin-right: 3%;
+    }
+
 
     /*trang doc truyen*/
     h1.detail-title.txt-primary {
@@ -1156,8 +1217,16 @@ textarea.modal-form-comment.form-comment {
         font-size: 17px;
     }
 
+    .modal-comment-content.comment-content {
+        margin-right: 2.5%;
+    }
+
     .modal-container {
-        width: 60%;
+        width: 70%;
+    }
+
+    textarea.modal-form-comment.form-comment {
+        width: 88%;
     }
 }
 
@@ -1184,6 +1253,14 @@ textarea.modal-form-comment.form-comment {
         font-size: 20px;
         padding: 3px 25px;
     }
+
+    .modal-container {
+        width: 73%;
+    }
+
+    textarea.modal-form-comment.form-comment {
+        width: 87%;
+    }
 }
 
 @media (max-width: 514px) {
@@ -1206,7 +1283,9 @@ textarea.modal-form-comment.form-comment {
     }
 
     .modal-container {
-        display: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
     }
 
     h1.detail-title.txt-primary {
